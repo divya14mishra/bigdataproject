@@ -22,3 +22,4 @@ import json
 import jsonlines
 import  pymongo
 from datetime import datetime
+from os.path import exists

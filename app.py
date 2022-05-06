@@ -99,6 +99,7 @@ def twitter_sentiments():
                 templ.append(inx+1)
                 templ.append(hists[inx])
                 final_list.append(templ)
+            print(final_list)
             return render_template('all_visualizations.html', hists = final_list)
         else:
             return {"status":0,"error":"No charts Found Error in Code!"}
