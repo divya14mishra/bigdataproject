@@ -1,0 +1,128 @@
+@import url(https://fonts.googleapis.com/css?family=Sniglet|Raleway:900);
+
+
+body, html{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: 'Sniglet', cursive;
+}
+.bodyclass{
+	background-color: rgb(0, 0, 0);
+}
+
+.bodyclass2{
+	background-color:rgb(181, 237, 241);
+	text-align: center;
+	margin-top: 150px;
+}
+
+.centerclass{
+	text-align: center;
+}
+
+.imgclass{  
+    height: 550px;  
+    width: 650px;  
+    }  
+	
+.paraclass
+{
+	color:darkblue;font-size:160%;
+}
+
+
+header{
+	height: 200px;
+	background: url('http://www.geertjanhendriks.nl/codepen/form/golf.png') repeat-x bottom;
+}
+.fontclass{
+	font-weight: normal;
+	font-family: 'Raleway', sans-serif;
+	margin: 0 auto;
+	color: #F90;
+	text-align: center;
+	font-size: 26px;
+}
+
+@-webkit-keyframes myfirst
+{
+	0% {margin-left: -235px}
+	90% {margin-left: 100%;}
+	100% {margin-left: 100%;}
+}
+
+/* Animation */
+@keyframes myfirst
+{
+	0% {margin-left: -235px}
+	70% {margin-left: 100%;}
+	100% {margin-left: 100%;}
+}
+
+.fish{
+	background-image: url('http://www.geertjanhendriks.nl/codepen/form/fish.png');
+	width: 235px;
+	height: 104px;
+	margin-left: -235px;
+	position: absolute;	
+	animation: myfirst 20s;
+	-webkit-animation: myfirst 20S;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+}
+
+#fish{
+	top: 25px;
+}
+
+#fish2{
+	top: 200px;
+	animation-delay: 4s;
+	-webkit-animation-delay: 4s;
+}
+
+#fish3{
+	top: 300px;
+	animation-delay: 4s;
+	-webkit-animation-delay: 4s;
+}
+
+#detector{
+	font-weight: normal;
+	font-size: 2em;
+	font-family: 'Raleway', sans-serif;
+	margin: 0 auto;
+	margin-top: 20px;
+	color: rgb(15, 5, 5);
+	text-align: center;
+}
+
+.margin1
+{
+	margin-top: 200px;
+}
+.atag .btn{
+    background: linear-gradient(45deg,#77ffa2,#779dff);
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+	margin-right: 15px;
+}
+.commonButton{
+    background: linear-gradient(45deg,#77ffa2,#779dff);
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+	margin-right: 15px;
+	border: none;
+}
+#form{
+	height: 75%;	
+	background-color: #98d4f3;
+	overflow: hidden;
+	position: relative;
+	
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE=html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet"  href="../static/css/style_index.css" media="all" />
+    <title> All Visualization Plots</title>
+</head>
+<body class="bodyclass2">
+    <!-- {{first_event}} to {{second_event}} -->
+    <div class ="centerclass">  
+    {% for hist in hists %}
+      <p class="paraclass">Graph {{hist[0]}}</p>
+      <img class="imgclass" src="{{url_for('static', filename=hist[1])}}" alt="{{hist[1]}}">
+      <br>
+    {% endfor %}
+    <br>
+
+        <div class="atag centerclass">
+          <a href="/feedback"  class="btn" type="submit">Feedback Page
+          </a> 
+          <a href="/" class="btn"  type="submit">Main Page
+        </a> 
+      </div>
+
+
+</div>
+</body>
+</html>

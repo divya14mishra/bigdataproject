@@ -1,0 +1,36 @@
+<!DOCTYPE=html>
+  <html>
+
+  <head>
+    <title>Twitter Sentiments</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/style_index.css" media="all" />
+  </head>
+
+  <body class="bodyclass2">
+    <!-- {{first_event}} to {{second_event}} -->
+    <br><br>
+    <div class="container">
+      <h3 class="text-center mt-3">Let's See Your Twitter Sentiments</h3>
+      <form action="/twitter_sentiments" method="POST">
+        <div class="form-group">
+          <label for="hash">Enter your hashtag</label>
+          <input type="text" class="form-control" id="hash" name="hash" placeholder="Max 100 letters" required>
+        </div>
+        <div class="form-group">
+          <label for="count">Enter your tweet count</label>
+          <input type="text" class="form-control" id="count" name="count" placeholder="like 500 or 1000" required>
+        </div>
+        <button class="commonButton"> Submit</button>
+      </form>
+    </div>
+      <br>
+      <br>
+    <div class="atag centerclass ">
+      <a href="/" class="btn">Main Page</a>
+      <a href="/feedback" class="btn">Feedback Back</a>
+  </div>
+
+    </body>
+
+  </html>
