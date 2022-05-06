@@ -5,8 +5,6 @@ from twitter_data_viz import *
 from sentimentAnalysis import *
 
 app = Flask(__name__)
-VIZ_FOLDER = os.path.join('', 'all_visualizations')
-app.config['UPLOAD_FOLDER'] = VIZ_FOLDER 
 file = open('model.pkl', 'rb')
 clf = pickle.load(file)
 file.close()

@@ -10,7 +10,8 @@ def covid_viz_graphs():
 
         grouped_country = covid.groupby(["Country/Region", "ObservationDate"]).agg(
             {"Confirmed": 'sum', "Recovered": 'sum', "Deaths": 'sum'})
-        grouped_country["Active Cases"] = grouped_country["Confirmed"] - grouped_country["Recovered"]-grouped_country["Deaths"]
+        grouped_country["Active Cases"] = grouped_country["Confirmed"] - \
+            grouped_country["Recovered"]-grouped_country["Deaths"]
         grouped_country["log_confirmed"] = np.log(grouped_country["Confirmed"])
         grouped_country["log_active"] = np.log(grouped_country["Active Cases"])
 
@@ -36,6 +37,9 @@ def covid_viz_graphs():
         
         india_data = covid[covid["Country/Region"]=="India"]
         datewise_india = india_data.groupby(["ObservationDate"]).agg({"Confirmed":'sum',"Recovered":'sum',"Deaths":'sum'})
+        # print(datewise_india.iloc[-1])
+        # print("Total Active Cases: ",datewise_india["Confirmed"].iloc[-1]-datewise_india["Recovered"].iloc[-1]-datewise_india["Deaths"].iloc[-1])
+        # print("Total Closed Cases: ",datewise_india["Recovered"].iloc[-1]+datewise_india["Deaths"].iloc[-1])
         datewise_india["WeekOfYear"]=datewise_india.index.weekofyear
 
         week_num=[]
